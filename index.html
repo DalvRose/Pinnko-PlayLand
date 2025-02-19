@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background: #333; color: white; padding: 15px; position: fixed; width: 100%; top: 0; left: 0; }
+        header nav a { color: white; margin: 0 15px; text-decoration: none; }
+        section { padding: 80px 20px; }
+        .images { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .images img { width: 200px; height: auto; }
+        .form-container { max-width: 400px; margin: 0 auto; text-align: left; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#support">Support</a>
+            <a href="#general">General</a>
+        </nav>
+    </header>
+    
+    <section id="general">
+        <h1>Welcome to Our Landing Page</h1>
+        <div class="images">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+    </section>
+    
+    <section id="privacy">
+        <h2>Privacy Policy</h2>
+        <p>Details about our privacy policy...</p>
+    </section>
+    
+    <section id="support">
+        <h2>Support</h2>
+        <div class="form-container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
